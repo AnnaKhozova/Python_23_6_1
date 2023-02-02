@@ -26,7 +26,7 @@ class Exchange:
 
         try:
             r = requests.get(
-                f'https://min-api1.cryptocompare.com/data/price?fsym={base_ticker}&tsyms={quote_ticker}')
+                f'https://min-api.cryptocompare.com/data/price?fsym={base_ticker}&tsyms={quote_ticker}')
         except Exception:
             raise ExchangeException('Не удалось получить курсы валют')
 
